@@ -63,6 +63,17 @@ main {
 }
 
 .informacion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+
     color: #495057;
     font-size: 12px;
 }
