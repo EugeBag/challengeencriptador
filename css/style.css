@@ -25,6 +25,7 @@ main {
     color: #0A3871;
     margin-top: 90px;
     text-transform: lowercase;
+    font-size: 32px;
 }
 
 ::placeholder {
@@ -39,13 +40,21 @@ main {
     background: white;
     background-image: url("/images/Muñeco.png");
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
-    border-radius: 24px;
+    border-radius: 32px;
     color: #0A3871;
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
 
 }
 
@@ -53,15 +62,35 @@ main {
     outline: none;
 }
 
+.informacion {
+    color: #495057;
+    font-size: 12px;
+}
+
 .botones {
     display: flex;
     margin-top: 18px;
-    
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
 }
 
 .btn-encriptar {
     width: 328px;
-    height: 67px;
+    height: Hug 67px;
+    font-size: 16px;
+    padding: 24px;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 
     background-color: #0A3871;
     border: 1px solid #0A3871;
@@ -73,21 +102,28 @@ main {
 
 .btn-desencriptar {
     width: 328px;
-    height: 67px;
-    margin-left: 30px;
-    background-color: #D8DFE8; 
+    height: Hug 67px;
+    font-size: 16px;
+    padding: 24px;
+    gap: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    background-color: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
+
 
 }
 
 .btn-copiar {
     width: 328px;
     height: 67px;
-    
-    background-color: #ffffff; 
+    font-size: 16px;
+    background-color: #ffffff;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
