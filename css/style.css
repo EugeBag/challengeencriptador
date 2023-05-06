@@ -1,31 +1,39 @@
 * {
-    background: #F3F5FC;
+    background: #E5E5E5;
     font-family: 'Inter';
     font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+
+
 }
 
 .vector {
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 2%;
+    Width: 31.09px;
+    Height: 48px;
+    Left: 5%;
+    margin-top: 4.25%;
+    margin-left: 8.94%;
+
 }
+
+
 
 main {
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 80px;
-
-
+    margin-bottom: 5.32%;
+    margin-left: 8.5%;
 }
 
 .textarea {
+    position: absolute;
     border: none;
+    width: 577px;
+    height: 48px;
+    margin-top: 168px;
+    margin-left: 240px;
     color: #0A3871;
-    margin-top: 90px;
     text-transform: lowercase;
     font-size: 32px;
+    line-height: 150%px;
 }
 
 ::placeholder {
@@ -47,7 +55,7 @@ main {
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    position: absolute;
 
     width: 400px;
     height: 944px;
@@ -131,9 +139,19 @@ main {
 }
 
 .btn-copiar {
-    width: 328px;
-    height: 67px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 336px;
+    height: Hug 67px;
+    left: 1032px;
+    top: 885px;
     font-size: 16px;
+    text-align: center;
+    flex: none;
     background-color: #ffffff;
     border: 1px solid #0A3871;
     border-radius: 24px;
