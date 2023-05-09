@@ -1,35 +1,39 @@
 * {
+    margin: 0;
+    padding: 0;
     background: #E5E5E5;
+    box-sizing: border-box;
+
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Inter';
     font-weight: 400;
-
-
+   
 }
 
 .vector {
     Width: 31.09px;
     Height: 48px;
-    Left: 5%;
-    margin-top: 4.25%;
-    margin-left: 8.94%;
+    margin-top: 40px;
+    margin-left: 84px;
 
 }
 
-
-
-main {
-    display: flex;
-    margin-bottom: 5.32%;
-    margin-left: 8.5%;
-}
 
 .textarea {
     position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
     border: none;
-    width: 577px;
-    height: 48px;
-    margin-top: 168px;
-    margin-left: 240px;
     color: #0A3871;
     text-transform: lowercase;
     font-size: 32px;
@@ -38,37 +42,13 @@ main {
 
 ::placeholder {
     color: #0A3871;
+    font-size: 32px;
 }
 
 .textarea:focus {
     outline: none;
-}
+    }
 
-.mensaje {
-    background: white;
-    background-image: url("/images/Muñeco.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    border-radius: 32px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: absolute;
-
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-
-
-}
-
-.mensaje:focus {
-    outline: none;
-}
 
 .informacion {
     display: flex;
@@ -77,69 +57,99 @@ main {
     padding: 0px;
     gap: 8px;
     position: absolute;
-    width: 229px;
-    height: 18px;
-    left: 240px;
-    top: 851px;
-
+    width: 80%;
+    left: 12%;
+    top: 80%;
     color: #495057;
     font-size: 12px;
+    
 }
 
 .botones {
     display: flex;
-    margin-top: 18px;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 1% 0;
     gap: 24px;
     position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
+    width: 80%;
+    left: 12%;
+    top: 82%;
 
 }
 
 .btn-encriptar {
+    align-items: center;
+    justify-content: center;
     width: 328px;
     height: Hug 67px;
     font-size: 16px;
     padding: 24px;
     gap: 8px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
     background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
+    line-height: 19px;
     color: white;
     cursor: pointer;
 
 }
 
 .btn-desencriptar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     width: 328px;
     height: Hug 67px;
     font-size: 16px;
     padding: 24px;
     gap: 8px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+     background: white; 
+     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    border: none;
+}
+
+.mensaje {
+   
+    
+    
+    color: #0A3871;
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+   
 
 
 }
 
-.btn-copiar {
+.mensaje:focus {
+    outline: none;
+}
 
+
+
+.btn-copiar {
+    box-sizing: border-box;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
@@ -151,11 +161,12 @@ main {
     top: 885px;
     font-size: 16px;
     text-align: center;
-    flex: none;
+
     background-color: #ffffff;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
+
 
 }
