@@ -3,16 +3,20 @@
     padding: 0;
     background: #E5E5E5;
     box-sizing: border-box;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
 
 }
 
-.container {
+.container{
     position: relative;
     width: 100vw;
     height: 100vh;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     font-family: 'Inter';
     font-weight: 400;
    
@@ -81,17 +85,19 @@
 .btn-encriptar {
     align-items: center;
     justify-content: center;
-    width: 328px;
+    width: 25%;
     height: Hug 67px;
-    font-size: 16px;
-    padding: 24px;
+    font-size: 18px;
+    padding: 2%;
     gap: 8px;
     background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
     line-height: 19px;
+    text-align: center;
     color: white;
     cursor: pointer;
+    
 
 }
 
@@ -101,20 +107,26 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    width: 328px;
+    width: 25%;
     height: Hug 67px;
-    font-size: 16px;
-    padding: 24px;
+    font-size: 18px;
+    padding: 2%;
     gap: 8px;
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
+    line-height: 19px;
+    text-align: center;
+    
 }
+
+
 
 .encriptado{
     display: flex;
+    flex-direction: wrap;
     justify-content: center;
     position: absolute;
     width: 30%;
@@ -125,28 +137,62 @@
      box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     border: none;
+    background-color: #ffffff;
 }
 
-.mensaje {
-   
-    
-    
+.mensaje-encriptado {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #0A3871;
     position: absolute;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-   
-
+    padding: 1%;
+    gap: 16px;
+    width: 100%;
+    text-align: center;
+    top: 65%;
+    background-color: #ffffff;
 
 }
 
-.mensaje:focus {
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    background-color: #ffffff;
+
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background-color: #ffffff;
+
+}
+.mensaje-encriptado:focus {
     outline: none;
 }
 
+.encriptado img{
+position: absolute;
+width: 80%;
+top: 15%;
+background-color: #ffffff;
 
+
+}
 
 .btn-copiar {
     box-sizing: border-box;
@@ -170,3 +216,9 @@
 
 
 }
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
